@@ -7,7 +7,7 @@ variable "namespace" {
 variable "principal_arns" {
   description = "A list of principal arns allowed to assume the IAM role"
   default     = null
-  type        = string
+  type        = list(string)
 }
 
 variable "force_destroy_state" {
