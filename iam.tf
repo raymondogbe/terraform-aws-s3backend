@@ -14,7 +14,7 @@ resource "aws_iam_role" "iam_role" {
         {
           "Action": "sts:AssumeRole",
           "Principal": {
-              "AWS": ${local.principal_arns}
+              "AWS": ${tostring(local.principal_arns)}
           },
           "Effect": "Allow"
         }
