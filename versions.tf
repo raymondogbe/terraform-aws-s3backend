@@ -1,7 +1,7 @@
-/*terraform {
-  required_version = "~> 0.12"
+terraform {
+  required_version = "~> 0.14"
   required_providers {
-    aws = "~> 2.19"
-    random = "~> 2.1"
+    aws = "~> 3.22"
+    random = "~> 3.0"
   }
-}*/
+}
