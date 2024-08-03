@@ -36,7 +36,7 @@ resource "aws_kms_key" "kms_key" {
   }
 }
 
-resource "aws_s3_bucket_versioning" "s3_bucket" {
+resource "aws_s3_bucket" "s3_bucket" {
   bucket        = "${local.namespace}-state-bucket"
   force_destroy = var.force_destroy_state
 
